@@ -6,7 +6,7 @@ javascript:(function () {
   var V = 'v20140901',
     UA, PF, SR, ID, YO;
   if (L.match(/^https:\/\/twitter\.com\/[0-9a-zA-Z_]+$/)) {
-    UA = D.getElementsByClassName("UserActions"),
+    UA = D.getElementsByClassName("ProfileNav"),
     SR = UA[0].innerHTML,
     ID = SR.replace(/(?:.|\n|\r|\u2028|\u2029)+data-user-id="([0-9]+)"(?:.|\n|\r|\u2028|\u2029)+/g, '$1');
   } else if (L.match(/^https:\/\/mobile\.twitter\.com\/[0-9a-zA-Z_]+$/)) {
